@@ -2,7 +2,7 @@
 
 # Flash My zImage	
 # Author: Russell Dias
-# Version: 1.0.7
+# Version: 1.0.8
 # Date: July 10, 2013
 # Contact: russell.dias98@gmail.com
 
@@ -19,7 +19,7 @@ else
   echo
   echo "There is no output folder. Good to go."
 fi
-#Removing Existine Ramdisk Folder
+#Removing Existing Ramdisk Folder
 echo
 echo "Removing Existine Ramdisk Folder"
 sleep 1
@@ -144,6 +144,7 @@ echo "Going to make a flashable zip"
 echo
 echo "Please Add the modules to /tools/system/lib/modules and press enter"
 read ANS
+echo
 echo "All Good"
 echo
 echo "Making Zip"
