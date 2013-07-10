@@ -2,8 +2,8 @@
 
 # Flash My zImage	
 # Author: Russell Dias
-# Version: 1.0.3
-# Date: June 4, 2013
+# Version: 1.0.7
+# Date: July 10, 2013
 # Contact: russell.dias98@gmail.com
 
 #Cleaning Output Folder(if ANy)
@@ -122,6 +122,9 @@ fi
 sleep 1
 echo "Making ramdisk.gz"
 echo
+echo "Modify ramdisk Now. After that press [Enter]"
+echo
+read ANS
 ./tools/mkbootfs ramdisk-1 | gzip > ramdisk.gz
 sleep 1
 echo "Done"
