@@ -21,7 +21,7 @@ else
 fi
 #Removing Existing Ramdisk Folder
 echo
-echo "Removing Existine Ramdisk Folder"
+echo "Removing Existing Ramdisk Folder"
 sleep 1
 if test -e ramdisk-1
   then
@@ -44,7 +44,7 @@ echo "Removed"
 else
   echo
   echo "There is no zImage folder. Good to go."
-fi
+fi 
 #Finding your boot.img
 echo
 echo "Finding your boot.img"
@@ -123,7 +123,6 @@ sleep 1
 echo "Making ramdisk.gz"
 echo
 echo "Modify ramdisk Now. After that press [Enter]"
-echo
 read ANS
 ./tools/mkbootfs ramdisk-1 | gzip > ramdisk.gz
 sleep 1
@@ -156,7 +155,7 @@ cp ../tools/signapk.jar signapk.jar
 cp ../tools/testkey.x509.pem testkey.x509.pem
 cp ../tools/testkey.pk8 testkey.pk8
 echo
-zip -r Flash-My-zImage.zip META-INF system boot.img 
+zip -r Flash-My-zImage.zip META-INF system bin boot.img 
 echo
 echo "ZIP Ready, signing it"
 java -jar signapk.jar testkey.x509.pem testkey.pk8 Flash-My-zImage.zip Flash-My-zImage-SIGNED.zip
