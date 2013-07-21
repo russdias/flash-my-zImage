@@ -151,6 +151,7 @@ echo "Making Zip"
 cd target
 cp -r ../tools/META-INF META-INF
 cp -r ../tools/system system
+cp -r ../tools/bin bin
 cp ../tools/signapk.jar signapk.jar 
 cp ../tools/testkey.x509.pem testkey.x509.pem
 cp ../tools/testkey.pk8 testkey.pk8
@@ -165,6 +166,7 @@ rm *.pk8
 rm *.pem
 rm -r META-INF 
 rm -r system
+rm -r bin
 rm -r boot.img
 s1=`ls -lh Flash-My-zImage-SIGNED.zip | sed -e 's/.* [ ]*\([0-9]*\.[0-9]*[MK]\) .*/\1/g'`
 echo

@@ -1,0 +1,3 @@
+post-build=htc_europe/htc_pico/pico:2.3.5/GRJ90/207463.1:user/release-keys
+post-timestamp=1364576986
+pre-device=pico
