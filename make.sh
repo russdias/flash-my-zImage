@@ -2,8 +2,8 @@
 
 # Flash My zImage	
 # Author: Russell Dias
-# Version: 1.0.8
-# Date: July 10, 2013
+# Version: 1.0.9
+# Date: February 3, 2015
 # Contact: russell.dias98@gmail.com
 
 #Cleaning Output Folder(if ANy)
@@ -116,7 +116,7 @@ if test -d ramdisk-1
 echo
 then echo "Found Ramdisk" 
 echo
-else echo "Sorry. We did not find your ramdisk"
+else echo "Sorry, Could did not find your ramdisk"
 exit 
 fi
 sleep 1
@@ -156,7 +156,7 @@ cp ../tools/testkey.pk8 testkey.pk8
 echo
 zip -r Flash-My-zImage.zip META-INF system boot.img 
 echo
-echo "ZIP Ready, signing it"
+echo "ZIP Ready, signing it!"
 java -jar signapk.jar testkey.x509.pem testkey.pk8 Flash-My-zImage.zip Flash-My-zImage-SIGNED.zip
 rm Flash-My-zImage.zip
 rm *.jar
@@ -172,7 +172,7 @@ echo
 echo "Flash My zImage by russelldias"
 echo
 sleep 1
-echo "Thanks for using Flash My zImage"
+echo "Thanks for using Flash My zImage by russelldias"
 echo
 sleep 1
 echo "Please press [Enter] to exit."
