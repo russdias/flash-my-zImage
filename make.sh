@@ -2,7 +2,7 @@
 
 # Flash My zImage	
 # Author: Russell Dias
-# Version: 1.0.10
+# Version: 1.0.11
 # Date: March 22, 2015
 # Contact: russell.dias98@gmail.com
 
@@ -17,7 +17,7 @@ echo
 echo "Removed"
 else
   echo
-  echo "There is no output folder. Continuing."
+  echo "There is no output folder, Continuing."
 fi
 #Removing Existing Ramdisk Folder
 echo
@@ -30,7 +30,7 @@ echo
 echo "Removed"
 else
   echo
-  echo "There is no Ramdisk folder. Continuing."
+  echo "There is no Ramdisk folder, Continuing."
 fi
 #Removing Existing zImage Folder
 echo
@@ -43,7 +43,7 @@ echo
 echo "Removed"
 else
   echo
-  echo "There is no zImage folder. Continuing."
+  echo "There is no zImage folder, Continuing."
 fi 
 #Finding your boot.img
 echo
@@ -122,7 +122,7 @@ fi
 sleep 1
 echo "Making ramdisk.gz"
 echo
-echo "Modify ramdisk Now. After that press [Enter]"
+echo "Modify ramdisk Now, After that press [Enter]"
 read ANS
 ./tools/mkbootfs ramdisk-1 | gzip > ramdisk.gz
 sleep 1
