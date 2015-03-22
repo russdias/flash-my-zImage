@@ -2,8 +2,8 @@
 
 # Flash My zImage	
 # Author: Russell Dias
-# Version: 1.0.9
-# Date: February 3, 2015
+# Version: 1.0.10
+# Date: March 22, 2015
 # Contact: russell.dias98@gmail.com
 
 #Cleaning Output Folder(if ANy)
@@ -17,7 +17,7 @@ echo
 echo "Removed"
 else
   echo
-  echo "There is no output folder. Good to go."
+  echo "There is no output folder. Continuing."
 fi
 #Removing Existing Ramdisk Folder
 echo
@@ -30,7 +30,7 @@ echo
 echo "Removed"
 else
   echo
-  echo "There is no Ramdisk folder. Good to go."
+  echo "There is no Ramdisk folder. Continuing."
 fi
 #Removing Existing zImage Folder
 echo
@@ -43,7 +43,7 @@ echo
 echo "Removed"
 else
   echo
-  echo "There is no zImage folder. Good to go."
+  echo "There is no zImage folder. Continuing."
 fi 
 #Finding your boot.img
 echo
@@ -55,7 +55,7 @@ if test -e boot_img/boot.img ; then
 else
   echo "Could not Find boot.img"
   echo
-  echo "Quitting"
+  echo "Quitting Script"
   exit
 fi
 #Finding your zImage
